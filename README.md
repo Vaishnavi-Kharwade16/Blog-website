@@ -2,14 +2,14 @@
 
 Project Name: MegaBlog 
 Tech Stack: React.js, Appwrite (BaaS), Redux Toolkit, React Router, React Hook Form, TailwindCSS, TinyMCE
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 📌 Project Overview
 MegaBlog is a modern full-stack blog platform built with React and Appwrite, designed to offer a seamless user experience for creating, updating, and reading blog posts. It includes full authentication, file uploads, protected routes, and dynamic content rendering.
 
 This project is ideal for learners of React looking to explore full-stack development using a backend-as-a-service (BaaS) platform.
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
  🧠Motivation & Learning Goals
