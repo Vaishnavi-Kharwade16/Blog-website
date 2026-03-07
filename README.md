@@ -1,61 +1,48 @@
-#📝 MegaBlog – A Full-Stack Blog Website with React & Appwrite
-
-Project Name: MegaBlog 
+📝 MegaBlog – A Full-Stack Blog Website with React & Appwrite
+Project Name: MegaBlog (Deployed as PenFlow)
 Tech Stack: React.js, Appwrite (BaaS), Redux Toolkit, React Router, React Hook Form, TailwindCSS, TinyMCE
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 
 📌 Project Overview
 MegaBlog is a modern full-stack blog platform built with React and Appwrite, designed to offer a seamless user experience for creating, updating, and reading blog posts. It includes full authentication, file uploads, protected routes, and dynamic content rendering.
 
 This project is ideal for learners of React looking to explore full-stack development using a backend-as-a-service (BaaS) platform.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
- 🧠Motivation & Learning Goals
+🧠 Motivation & Learning Goals
 Learn how to use React with state management, routing, and forms
 Practice integrating Appwrite as a backend service for authentication, database, and storage
 Work with Redux Toolkit for centralized state handling
 Handle file uploads and image previews with Appwrite's Storage API
 Create responsive UI using Tailwind CSS
 Use TinyMCE (Rich Text Editor) integrated with React Hook Form
-
 🚀 Features
 🧑‍💻 User Authentication (Sign Up, Login, Logout)
 Secure sign-up and login functionality using Appwrite's Account API
 Session-based authentication with error handling
 Protected routes visible only to logged-in users
 Redux state updated on successful login/logout
-
 ✍️ Create, Edit, and Delete Blog Posts
 Post creation form with fields: title, slug (auto-generated), image upload, and rich text content
 Image stored in Appwrite Storage and referenced in database
 Update and delete functionality built using Appwrite Database and Storage APIs
 Rich text content handled using TinyMCE
-
 🖼️ Image Uploads & Preview
 Users can upload featured images for blog posts
 Uses Appwrite’s Storage service to save images
 Preview images on post edit and public pages using getFilePreview()
-
 🌐 Public Post Listing
 All public blog posts (with status = active) are listed
 Uses listDocuments() with filters via Appwrite Query API
 Public-facing route for individual post reading
-
 🔐 Protected Routes
 Add Post, Edit Post, and All Posts routes are accessible only after login
 Uses authStatus from Redux to conditionally render navigation items
-
 📖 Rich Text Editor Integration (TinyMCE)
 Rich content editing for blog posts
 Controlled through react-hook-form's Controller component
 Optional for testing: defaults to empty content if skipped
-
 🎨 TailwindCSS UI
 Fully responsive and clean design
 Utility-first styling for layout, form inputs, and buttons
-
 🧱 Project Structure
 src/
 ├── appwrite/           # Appwrite services (auth, config, database)
@@ -65,15 +52,12 @@ src/
 ├── conf/               # Appwrite env variable mapping
 ├── App.jsx             # Main App with layout & routing
 ├── main.jsx            # React entry point
-
 ⚙️ React Concepts Used
 React Router DOM – Client-side routing using Outlet, Link, useNavigate
 Redux Toolkit – createSlice, useSelector, useDispatch for auth state
 React Hook Form – Minimal and efficient form handling
 useEffect, useState, useCallback – Core hooks for data fetching and side effects
 Controlled components – Inputs and editor controlled via register and Controller
-
-
 🔐 Appwrite Services Used
 Account: createAccount, createEmailSession, get, deleteSession
 Database: createDocument, updateDocument, deleteDocument, listDocuments, getDocument
@@ -92,7 +76,6 @@ Auto-generated slug based on title is used as document ID
 Converts title into a URL-friendly format using .toLowerCase().replace()
 📸 Image Previews
 Stored image IDs used in getFilePreview() for displaying on cards and edit form
-
 🌐 Deployment – Netlify
 Deployed on Netlify:
 
@@ -117,4 +100,3 @@ Portfolio showcase with real-world CRUD
 This project is open-source and free to use.
 
 Built with ❤️ using React + Appwrite
-
